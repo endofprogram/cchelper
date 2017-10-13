@@ -24,8 +24,12 @@ import com.cmos.crmpfcore.frame.IOutIntfProcessService;
 public class Caller {
 	
 	public Map<String, Map<String, Object>> call(InputObject inputObject, List<InterfaceEntity> inters, IOutIntfProcessService outIntfProcess) throws InterruptedException, ExecutionException {
+		return call(inputObject, inters, null, outIntfProcess);
+	}
+	
+	public Map<String, Map<String, Object>> call(InputObject inputObject, List<InterfaceEntity> inters, List<String> codes, IOutIntfProcessService outIntfProcess) throws InterruptedException, ExecutionException {
 		IInters itrs = new Inters();
-		setInterfaces(itrs, inters);
+		setInterfaces(itrs, filterInterfaceByCode(inters, codes));
 		IExeInters exeInters = new ExeInters(outIntfProcess);
 		prepareExeInters(exeInters, itrs);
 		return exeInters.execute(inputObject);
@@ -65,6 +69,24 @@ public class Caller {
 		}
 	}
 	
+	protected List<InterfaceEntity> filterInterfaceByCode(List<InterfaceEntity> inters, List<String> codes) {
+		List<InterfaceEntity> itrs = new ArrayList<>();
+		if (codes == null || codes.isEmpty()) {
+			itrs.addAll(inters);
+		} else {
+			for (InterfaceEntity inter : inters) {
+				if (codes.contains(getCode(inter.getIntfBizCode()))) {
+					itrs.add(inter);
+				}
+			}
+		}
+		return itrs;
+	}
+	
+	protected String getCode(String interFlag) {
+		return interFlag.substring(2, interFlag.length() - 3);
+	}
+	
 
 	public interface IInter {
 		
@@ -90,8 +112,6 @@ public class Caller {
 		void addInter(IInter inter);
 		
 		IInter getMatched(InterfaceEntity inter);
-		
-		Map<String, Map<String, Object>> call(InputObject inputObject);
 	}
 	
 	public interface IExeInter {
@@ -211,11 +231,6 @@ public class Caller {
 			return null;
 		}
 
-		@Override
-		public Map<String, Map<String, Object>> call(InputObject inputObject) {
-			return null;
-		}
-		
 		protected void sortedByOrder() {
 			Collections.sort(inters, new Comparator<IInter>() {
 
