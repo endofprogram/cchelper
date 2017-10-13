@@ -1,0 +1,27 @@
+package org.eop.groovy.cchelper.test.inter.hn371
+
+import org.eop.groovy.cchelper.test.inter.AbstractInterTest
+
+import com.cmos.esbclient.bean.RestMethodType
+/***
+{
+"userMobile": "15093325804",
+"itemId": ""
+}
+***/
+/**
+ * @author lixinjie
+ */
+class _02DYLLMXLLCXTest extends AbstractInterTest {
+
+	@Override
+	RestMethodType getMethod() {
+		RestMethodType.GET
+	}
+
+	@Override
+	String getUri() {
+		'business/gs/monthFlowDetail'
+	}
+
+}
