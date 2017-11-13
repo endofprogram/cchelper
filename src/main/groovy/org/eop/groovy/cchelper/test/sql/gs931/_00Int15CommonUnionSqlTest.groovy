@@ -13,6 +13,8 @@ abstract class _00Int15CommonUnionSqlTest extends AbstractSqlTest {
 
     abstract Map getOutIntfMap()
 
+    abstract List getInParams()
+
     abstract List getDeps()
 
     String getVersion() {
@@ -52,6 +54,15 @@ abstract class _00Int15CommonUnionSqlTest extends AbstractSqlTest {
     @Override
     Map getOutInterface() {
         [route: '', name: """甘肃能开_转接_${distinctName}""", clsnm: """${outIntfMap}.cls""", type: '1', path: '', bizcode: '', method: 'POST', fmttype: 'json', entid: '10', desc: """甘肃能开_转接_${distinctName}(${version}_out)""", biztype: '001']
+    }
+
+    @Override
+    List getInInterfaceParams() {
+        def list = []
+        inParams.each {
+            list << [type:'1', name:"""$it""", nflag:'0', seqno:'01']
+        }
+        list
     }
 
     @Override
