@@ -46,12 +46,12 @@ abstract class _00Int15CommonOneSqlTest extends AbstractSqlTest {
 
     @Override
     Map getInInterface() {
-        [route: '', name: """甘肃能开_接入_${distinctName}""", clsnm: 'userMobileCommonIntfService', type: '1', path: """$inIntfMap.path""", bizcode: """i-${inIntfMap.kname}-00""", method: """$inIntfMap.method""", fmttype: 'json', entid: '', desc: """甘肃能开_接入_${distinctName}(${version}_in)""", biztype: '001']
+        [route: '', name: """甘肃能开_接入_${distinctName}""", clsnm: 'userMobileCommonIntfService', type: '1', path: """$inIntfMap.path""", bizcode: """i-${inIntfMap.depkey}-00""", method: """$inIntfMap.method""", fmttype: 'json', entid: '', desc: """甘肃能开_接入_${distinctName}(${version}_in)""", biztype: '001']
     }
 
     @Override
     Map getOutInterface() {
-        [route: '', name: """甘肃能开_转接_${distinctName}""", clsnm: """$outIntfMap.cls""", type: '1', path: """$outIntfMap.path""", bizcode: """o-${inIntfMap.kname}-00""", method: """$outIntfMap.method""", fmttype: 'json', entid: '10', desc: """甘肃能开_转接_${distinctName}(${version}_out)""", biztype: '001']
+        [route: '', name: """甘肃能开_转接_${distinctName}""", clsnm: """$outIntfMap.cls""", type: '1', path: """$outIntfMap.path""", bizcode: """o-${outIntfMap.depkey}-00""", method: """$outIntfMap.method""", fmttype: 'json', entid: '10', desc: """甘肃能开_转接_${distinctName}(${version}_out)""", biztype: '001']
     }
 
     @Override
