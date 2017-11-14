@@ -14,7 +14,7 @@ class i03DinnerRmQry extends _00Int15CommonUnionSqlTest {
 
     @Override
     List getDeps() {
-        ['已有计划和产品', '办理活动查询']
+        ['当前下周期计划查询', '流量使用带产品']
     }
 
     @Override

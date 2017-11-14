@@ -1,6 +1,6 @@
 package org.eop.groovy.cchelper.test.sql.gs931
 
-class i03_01BrandQry extends _00Int15CommonOneSqlTest {
+class i03_01PlanQry extends _00Int15CommonOneSqlTest {
 
     @Override
     String getSqlFilePrefix() {
@@ -9,7 +9,7 @@ class i03_01BrandQry extends _00Int15CommonOneSqlTest {
 
     @Override
     String getDistinctName() {
-        '品牌查询'
+        '当前下周期计划查询'
     }
 
     @Override
@@ -19,7 +19,7 @@ class i03_01BrandQry extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/brandQry', 'method': 'GET']
+        ['path': 'business/gs/planQry', 'method': 'GET']
     }
 
     @Override
@@ -29,7 +29,7 @@ class i03_01BrandQry extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        ['cls': 'gsUserBrandQueryService', 'path': '/openapi/V1/partner/ability/production/userPromoCommon', 'method': 'POST']
+        ['cls': 'gsUserPlanQueryService', 'path': 'https://partner.cmccgs.cn/openapi/V1/partner/ability/production/userCurAndNextPlan', 'method': 'POST']
     }
 }
 
