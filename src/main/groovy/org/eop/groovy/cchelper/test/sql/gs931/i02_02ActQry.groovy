@@ -13,6 +13,11 @@ class i02_02ActQry extends _00Int15CommonOneSqlTest {
     }
 
     @Override
+    String getDepKey() {
+        'useractivity'
+    }
+
+    @Override
     Map getInIntfMap() {
         ['path': 'business/gs/actQry', 'method': 'GET', 'depkey': '']
     }

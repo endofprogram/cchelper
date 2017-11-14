@@ -13,8 +13,13 @@ class i03_02GprsRmnQry extends _00Int15CommonOneSqlTest {
     }
 
     @Override
+    String getDepKey() {
+        'dinnerRemain'
+    }
+
+    @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/gprsRmnQry', 'method': 'GET', 'depkey': '']
+        ['path': 'business/gs/gprsRmnQry', 'method': 'GET']
     }
 
     @Override
@@ -24,7 +29,7 @@ class i03_02GprsRmnQry extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        ['cls': 'gsFeeResourceWithProdService', 'path': '/openapi/V1/partner/ability/production/feeResourceWithProd', 'method': 'POST', 'depkey': '']
+        ['cls': 'gsFeeResourceWithProdService', 'path': '/openapi/V1/partner/ability/production/feeResourceWithProd', 'method': 'POST']
     }
 }
 

@@ -13,8 +13,13 @@ class i02_01OwnPlanProdQry extends _00Int15CommonOneSqlTest {
     }
 
     @Override
+    String getDepKey() {
+        'userplanprod'
+    }
+
+    @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/ownPlanProdQry', 'method': 'GET', 'depkey': '']
+        ['path': 'business/gs/ownPlanProdQry', 'method': 'GET']
     }
 
     @Override
@@ -24,6 +29,6 @@ class i02_01OwnPlanProdQry extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        ['cls': 'gsUserCurPlanAndProdQueryService', 'path': '/openapi/V1/partner/ability/production/userPlanProd', 'method': 'POST', 'depkey': '']
+        ['cls': 'gsUserCurPlanAndProdQueryService', 'path': '/openapi/V1/partner/ability/production/userPlanProd', 'method': 'POST']
     }
 }

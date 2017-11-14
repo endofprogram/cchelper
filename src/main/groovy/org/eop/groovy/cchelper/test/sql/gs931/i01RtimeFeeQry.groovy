@@ -13,8 +13,13 @@ class i01RtimeFeeQry  extends _00Int15CommonOneSqlTest {
     }
 
     @Override
+    String getDepKey() {
+        ''
+    }
+
+    @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/rtimeFeeQry', 'method': 'GET', 'depkey':'']
+        ['path': 'business/gs/rtimeFeeQry', 'method': 'GET']
     }
 
     @Override
@@ -24,7 +29,7 @@ class i01RtimeFeeQry  extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsSsPhoneMoneyQueryService', 'path': '/openapi/V1/partner/ability/production/oweFeeSimple', 'method': 'POST', 'depkey':'']
+        [ 'cls':'gsSsPhoneMoneyQueryService', 'path': '/openapi/V1/partner/ability/production/oweFeeSimple', 'method': 'POST']
     }
 }
 

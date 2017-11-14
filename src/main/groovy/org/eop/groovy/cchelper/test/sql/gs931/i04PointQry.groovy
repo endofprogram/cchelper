@@ -13,6 +13,11 @@ class i04PointQry extends _00Int15CommonOneSqlTest {
     }
 
     @Override
+    String getDepKey() {
+        ''
+    }
+
+    @Override
     Map getInIntfMap() {
         ['path': 'business/gs/pointQry', 'method': 'GET', 'depkey': '']
     }

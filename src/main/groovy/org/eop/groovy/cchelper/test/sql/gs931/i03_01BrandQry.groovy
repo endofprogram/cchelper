@@ -13,8 +13,13 @@ class i03_01BrandQry extends _00Int15CommonOneSqlTest {
     }
 
     @Override
+    String getDepKey() {
+        'userplan'
+    }
+
+    @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/brandQry', 'method': 'GET', 'depkey': '']
+        ['path': 'business/gs/brandQry', 'method': 'GET']
     }
 
     @Override
@@ -24,7 +29,7 @@ class i03_01BrandQry extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        ['cls': 'gsUserBrandQueryService', 'path': '/openapi/V1/partner/ability/production/userPromoCommon', 'method': 'POST', 'depkey': '']
+        ['cls': 'gsUserBrandQueryService', 'path': '/openapi/V1/partner/ability/production/userPromoCommon', 'method': 'POST']
     }
 }
 
