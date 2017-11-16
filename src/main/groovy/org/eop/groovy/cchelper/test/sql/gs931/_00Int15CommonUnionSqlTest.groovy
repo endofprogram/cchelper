@@ -28,17 +28,17 @@ abstract class _00Int15CommonUnionSqlTest extends AbstractSqlTest {
 
     @Override
     Map getDb() {
-        []
+        [name:'interfacepf']
     }
 
     @Override
     Map getBusiSystem() {
-        []
+        [name:'甘肃能力开发平台', desc:'甘肃能力开发平台', prov:'931', code:'GS_NL_PLTFM']
     }
 
     @Override
     Map getChannel() {
-        []
+        [name:'甘肃能力开发平台', addr:'https://partner.cmccgs.cn']
     }
 
     @Override
@@ -48,12 +48,12 @@ abstract class _00Int15CommonUnionSqlTest extends AbstractSqlTest {
 
     @Override
     Map getInInterface() {
-        [route: '', name: """甘肃能开_接入_${distinctName}""", clsnm: 'userMobileCommonIntfService', type: '1', path: """${inIntfMap}.path""", bizcode: '', method: """${inIntfMap}.method""", fmttype: 'json', entid: '', desc: """甘肃能开_接入_${distinctName}(${version}_in)""", biztype: '001']
+        [route: '', name: """甘肃能开_接入_${distinctName}""", clsnm: 'userMobileCommonIntfService', type: '1', path: """${inIntfMap.path}""", bizcode: '', method: """${inIntfMap.method}""", fmttype: 'json', entid: '', desc: """甘肃能开_接入_${distinctName}(${version}_in)""", biztype: '001']
     }
 
     @Override
     Map getOutInterface() {
-        [route: '', name: """甘肃能开_转接_${distinctName}""", clsnm: """${outIntfMap}.cls""", type: '1', path: '', bizcode: '', method: 'POST', fmttype: 'json', entid: '10', desc: """甘肃能开_转接_${distinctName}(${version}_out)""", biztype: '001']
+        [route: '', name: """甘肃能开_转接_${distinctName}""", clsnm: """${outIntfMap.cls}""", type: '1', path: '', bizcode: '', method: 'POST', fmttype: 'json', entid: '10', desc: """甘肃能开_转接_${distinctName}(${version}_out)""", biztype: '001']
     }
 
     @Override
@@ -83,9 +83,9 @@ abstract class _00Int15CommonUnionSqlTest extends AbstractSqlTest {
     @Override
     List getDependentInterfaces() {
         def list = []
-        deps.eachWithIndex { it, index ->
-            list << [desc: """甘肃能开_接入_${it[index]}(${version}_in)"""]
-            list << [desc: """甘肃能开_转接_${it[index]}(${version}_out)"""]
+        deps.each {
+            list << [desc: """甘肃能开_接入_${it}(${version}_in)"""]
+            list << [desc: """甘肃能开_转接_${it}(${version}_out)"""]
         }
         list
     }

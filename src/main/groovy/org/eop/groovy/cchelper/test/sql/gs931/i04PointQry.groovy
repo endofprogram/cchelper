@@ -1,15 +1,15 @@
 package org.eop.groovy.cchelper.test.sql.gs931
 
-class i01RtimeFeeQry  extends _00Int15CommonOneSqlTest {
+class i04PointQry extends _00Int15CommonOneSqlTest {
 
     @Override
     String getSqlFilePrefix() {
-        '01'
+        'i04'
     }
 
     @Override
     String getDistinctName() {
-        '实时话费查询'
+        '积分查询'
     }
 
     @Override
@@ -19,7 +19,7 @@ class i01RtimeFeeQry  extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/rtimeFeeQry', 'method': 'GET']
+        ['path': 'business/gs/pointQry', 'method': 'GET', 'depkey': '']
     }
 
     @Override
@@ -29,7 +29,7 @@ class i01RtimeFeeQry  extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsSsPhoneMoneyQueryService', 'path': '/openapi/V1/partner/ability/production/oweFeeSimple', 'method': 'POST']
+        ['cls': 'gsUniCoinQueryService', 'path': '/openapi/V1/partner/ability/production/userCoinEx', 'method': 'POST', 'depkey': '']
     }
 }
 

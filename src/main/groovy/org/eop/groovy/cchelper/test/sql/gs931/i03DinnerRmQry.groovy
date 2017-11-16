@@ -1,25 +1,25 @@
 package org.eop.groovy.cchelper.test.sql.gs931
 
-class i01RtimeFeeQry  extends _00Int15CommonOneSqlTest {
+class i03DinnerRmQry extends _00Int15CommonUnionSqlTest {
 
     @Override
     String getSqlFilePrefix() {
-        '01'
+        'i03'
     }
 
     @Override
     String getDistinctName() {
-        '实时话费查询'
+        '套餐余量查询'
     }
 
     @Override
-    String getDepKey() {
-        ''
+    List getDeps() {
+        ['当前下周期计划查询', '流量使用带产品']
     }
 
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/rtimeFeeQry', 'method': 'GET']
+        ['path': 'business/gs/dinnerRmnQry', 'method': 'GET']
     }
 
     @Override
@@ -29,7 +29,6 @@ class i01RtimeFeeQry  extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsSsPhoneMoneyQueryService', 'path': '/openapi/V1/partner/ability/production/oweFeeSimple', 'method': 'POST']
+        ['cls': 'gsDinnerRemainQueryService']
     }
 }
-
