@@ -24,8 +24,12 @@ class ivr_07LocalIntegralQry extends _00Int15CommonOneSqlTest {
     }
 
     @Override
+    String getDepKey() {
+        ''
+    }
+    @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/query_jfjlhd', 'method': 'POST', 'depkey':'']
+        ['path': 'business/gs/query_jfjlhd', 'method': 'POST' ]
     }
 
     @Override
@@ -35,7 +39,7 @@ class ivr_07LocalIntegralQry extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhPointQueryService', 'path': '/openapi/V1/partner/ability/sandbox/userCoinPeriodRec4cmcc', 'method': 'POST', 'depkey':'']
+        [ 'cls':'gsIvrZnyydhPointQueryService', 'path': '/openapi/V1/partner/ability/sandbox/userCoinPeriodRec4cmcc', 'method': 'POST' ]
     }
 
 }

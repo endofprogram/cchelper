@@ -16,8 +16,12 @@ public class ivr_13CallShowBusi extends _00Int15CommonOneSqlTest{
     }
 
     @Override
+    String getDepKey() {
+        ''
+    }
+    @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/busi_accept', 'method': 'POST', 'depkey':'']
+        ['path': 'business/gs/busi_accept', 'method': 'POST' ]
     }
 
     @Override
@@ -27,6 +31,6 @@ public class ivr_13CallShowBusi extends _00Int15CommonOneSqlTest{
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhCallDisplayTransactService', 'path': '/openapi/V1/partner/ability/sandbox/productChangePlanProd4cmcc', 'method': 'POST', 'depkey':'']
+        [ 'cls':'gsIvrZnyydhCallDisplayTransactService', 'path': '/openapi/V1/partner/ability/sandbox/productChangePlanProd4cmcc', 'method': 'POST' ]
     }
 }

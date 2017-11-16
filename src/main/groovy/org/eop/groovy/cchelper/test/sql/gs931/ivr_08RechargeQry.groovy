@@ -16,8 +16,13 @@ class ivr_08RechargeQry  extends _00Int15CommonOneSqlTest {
     }
 
     @Override
+    String getDepKey() {
+        ''
+    }
+
+    @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/query_payHistory', 'method': 'POST', 'depkey':'']
+        ['path': 'business/gs/query_payHistory', 'method': 'POST' ]
     }
 
     @Override
@@ -27,7 +32,7 @@ class ivr_08RechargeQry  extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhRechargeQueryService', 'path': '/openapi/V1/partner/ability/sandbox/busiRec4cmcc', 'method': 'POST', 'depkey':'']
+        [ 'cls':'gsIvrZnyydhRechargeQueryService', 'path': '/openapi/V1/partner/ability/sandbox/busiRec4cmcc', 'method': 'POST' ]
     }
 }
 

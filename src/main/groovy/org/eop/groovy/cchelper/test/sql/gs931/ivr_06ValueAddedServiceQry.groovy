@@ -16,8 +16,12 @@ class ivr_06ValueAddedServiceQry  extends _00Int15CommonOneSqlTest {
     }
 
     @Override
+    String getDepKey() {
+        ''
+    }
+    @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/send_sms', 'method': 'POST', 'depkey':'']
+        ['path': 'business/gs/send_sms', 'method': 'POST' ]
     }
 
     @Override
@@ -27,7 +31,7 @@ class ivr_06ValueAddedServiceQry  extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhValuedBusinessQueryService', 'path': '/openapi/V1/partner/ability/sandbox/feeSpInfo4cmcc', 'method': 'POST', 'depkey':'']
+        [ 'cls':'gsIvrZnyydhValuedBusinessQueryService', 'path': '/openapi/V1/partner/ability/sandbox/feeSpInfo4cmcc', 'method': 'POST' ]
     }
 }
 

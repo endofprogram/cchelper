@@ -16,8 +16,12 @@ class ivr_01QryBalance  extends _00Int15CommonOneSqlTest {
     }
 
     @Override
+    String getDepKey() {
+        ''
+    }
+    @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/query_balance', 'method': 'GET', 'depkey':'']
+        ['path': 'business/gs/query_balance', 'method': 'GET']
     }
 
     @Override
@@ -27,7 +31,7 @@ class ivr_01QryBalance  extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhRemainFeeQueryService', 'path': '/openapi/V1/partner/ability/sandbox/oweFeeSimple', 'method': 'POST', 'depkey':'']
+        [ 'cls':'gsIvrZnyydhRemainFeeQueryService', 'path': '/openapi/V1/partner/ability/sandbox/oweFeeSimple', 'method': 'POST']
     }
 }
 

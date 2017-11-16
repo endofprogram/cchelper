@@ -16,8 +16,12 @@ class ivr_04DayBillQry  extends _00Int15CommonOneSqlTest {
     }
 
     @Override
+    String getDepKey() {
+        ''
+    }
+    @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/do_sendSms', 'method': 'POST', 'depkey':'']
+        ['path': 'business/gs/do_sendSms', 'method': 'POST']
     }
 
     @Override
@@ -27,7 +31,7 @@ class ivr_04DayBillQry  extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhDailyBillQueryService', 'path': '/openapi/V1/partner/ability/sandbox/accBillDaily', 'method': 'POST', 'depkey':'']
+        [ 'cls':'gsIvrZnyydhDailyBillQueryService', 'path': '/openapi/V1/partner/ability/sandbox/accBillDaily', 'method': 'POST']
     }
 }
 

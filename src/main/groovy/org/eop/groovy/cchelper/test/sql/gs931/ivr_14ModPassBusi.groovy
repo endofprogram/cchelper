@@ -16,8 +16,12 @@ public class ivr_14ModPassBusi extends _00Int15CommonOneSqlTest{
     }
 
     @Override
+    String getDepKey() {
+        ''
+    }
+    @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/modify_password', 'method': 'POST', 'depkey':'']
+        ['path': 'business/gs/modify_password', 'method': 'POST' ]
     }
 
     @Override
@@ -27,6 +31,6 @@ public class ivr_14ModPassBusi extends _00Int15CommonOneSqlTest{
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhPwdChangeTransactService', 'path': '/openapi/V1/partner/ability/sandbox/changePwd', 'method': 'POST', 'depkey':'']
+        [ 'cls':'gsIvrZnyydhPwdChangeTransactService', 'path': '/openapi/V1/partner/ability/sandbox/changePwd', 'method': 'POST' ]
     }
 }

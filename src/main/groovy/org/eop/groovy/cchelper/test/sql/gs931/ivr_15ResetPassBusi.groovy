@@ -16,8 +16,12 @@ public class ivr_15ResetPassBusi extends _00Int15CommonOneSqlTest{
     }
 
     @Override
+    String getDepKey() {
+        ''
+    }
+    @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/get_userPassword', 'method': 'POST', 'depkey':'']
+        ['path': 'business/gs/get_userPassword', 'method': 'POST' ]
     }
 
     @Override
@@ -27,6 +31,6 @@ public class ivr_15ResetPassBusi extends _00Int15CommonOneSqlTest{
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhPwdResetTransactService', 'path': '/openapi/V1/partner/ability/sandbox/passwordReset', 'method': 'POST', 'depkey':'']
+        [ 'cls':'gsIvrZnyydhPwdResetTransactService', 'path': '/openapi/V1/partner/ability/sandbox/passwordReset', 'method': 'POST' ]
     }
 }

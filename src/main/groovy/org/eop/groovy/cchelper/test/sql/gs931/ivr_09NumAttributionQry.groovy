@@ -14,10 +14,13 @@ class ivr_09NumAttributionQry  extends _00Int15CommonOneSqlTest {
     String getDistinctName() {
         '号码归属地查询'
     }
-
+    @Override
+    String getDepKey() {
+        ''
+    }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/check_userPromo', 'method': 'POST', 'depkey':'']
+        ['path': 'business/gs/check_userPromo', 'method': 'POST' ]
     }
 
     @Override
@@ -27,7 +30,7 @@ class ivr_09NumAttributionQry  extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'', 'path': '/openapi/V1/partner/ability/sandbox/get_phoneArea', 'method': 'POST', 'depkey':'']
+        [ 'cls':'', 'path': '/openapi/V1/partner/ability/sandbox/get_phoneArea', 'method': 'POST' ]
     }
 }
 

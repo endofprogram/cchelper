@@ -16,8 +16,12 @@ class ivr_05FreeResourceQry  extends _00Int15CommonOneSqlTest {
     }
 
     @Override
+    String getDepKey() {
+        ''
+    }
+    @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/query_freeResource', 'method': 'POST', 'depkey':'']
+        ['path': 'business/gs/query_freeResource', 'method': 'POST']
     }
 
     @Override
@@ -27,7 +31,7 @@ class ivr_05FreeResourceQry  extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhMealFlowUsedQueryService', 'path': '/openapi/V1/partner/ability/sandbox/feeResource', 'method': 'POST', 'depkey':'']
+        [ 'cls':'gsIvrZnyydhMealFlowUsedQueryService', 'path': '/openapi/V1/partner/ability/sandbox/feeResource', 'method': 'POST']
     }
 }
 
