@@ -1,6 +1,9 @@
 package org.eop.groovy.cchelper.test.sql.gs931
 
-class ivr_03MonthBillQry extends _00Int15CommonUnionSqlTest {
+import org.eop.groovy.cchelper.test.sql.AbstractSqlTest
+import org.junit.Test
+
+class ivr_03MonthBillQry  extends _00Int15CommonOneSqlTest {
 
     @Override
     String getSqlFilePrefix() {
@@ -11,12 +14,10 @@ class ivr_03MonthBillQry extends _00Int15CommonUnionSqlTest {
     String getDistinctName() {
         '月账单查询'
     }
-
     @Override
-    List getDeps() {
-        ['月账单明细查询', '月账单查询集团']
+    String getDepKey() {
+        ''
     }
-
     @Override
     Map getInIntfMap() {
         ['path': 'business/gs/query_monthBillFee', 'method': 'POST']
@@ -24,11 +25,12 @@ class ivr_03MonthBillQry extends _00Int15CommonUnionSqlTest {
 
     @Override
     List getInParams() {
-        ['ServiceNumber','BgnMonth','EndMonth','billMonth','onlyMsisdn']
+        ['billMonth']
     }
 
     @Override
     Map getOutIntfMap() {
-        ['cls': 'gsIvrZnyydhMonthBillQueryService']
+        [ 'cls':'gsIvrZnyydhMonthBillQueryService', 'path': '/openapi/V1/partner/ability/sandbox/monthBillNewGs', 'method': 'POST']
     }
 }
+

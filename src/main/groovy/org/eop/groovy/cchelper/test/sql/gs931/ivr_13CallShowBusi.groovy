@@ -21,7 +21,7 @@ public class ivr_13CallShowBusi extends _00Int15CommonOneSqlTest{
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/busi_accept', 'method': 'POST' ]
+        ['path': 'business/gs/query_callShowBusi', 'method': 'POST' ]
     }
 
     @Override

@@ -21,7 +21,7 @@ class ivr_06ValueAddedServiceQry  extends _00Int15CommonOneSqlTest {
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/send_sms', 'method': 'POST' ]
+        ['path': 'business/gs/query_valueAddedService', 'method': 'POST' ]
     }
 
     @Override
