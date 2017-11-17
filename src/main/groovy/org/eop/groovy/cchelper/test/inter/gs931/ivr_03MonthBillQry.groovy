@@ -5,7 +5,7 @@ import org.eop.groovy.cchelper.test.inter.AbstractInterTest;
 
 /***
  {
-     "billMonth":"201512",
+     "billMonth":"201512"
  }
  ***/
 /**
