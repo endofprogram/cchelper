@@ -30,7 +30,7 @@ class ivr_09NumAttributionQry  extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'', 'path': '/openapi/V1/partner/ability/sandbox/get_phoneArea', 'method': 'POST' ]
+        [ 'cls':'gsIvrZnyydhNumAssignQueryService', 'path': '/openapi/V1/partner/ability/sandbox/get_phoneArea', 'method': 'POST' ]
     }
 }
 

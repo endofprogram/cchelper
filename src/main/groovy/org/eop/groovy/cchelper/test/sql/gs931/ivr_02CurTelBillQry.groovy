@@ -20,7 +20,7 @@ class ivr_02CurTelBillQry  extends _00Int15CommonOneSqlTest {
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/query_balance', 'method': 'POST']
+        ['path': 'business/gs/query_curTelBill', 'method': 'POST']
     }
 
     @Override
@@ -30,7 +30,7 @@ class ivr_02CurTelBillQry  extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhRealFeeQueryService', 'path': '/openapi/V1/partner/ability/production/query_feeAndBook', 'method': 'POST']
+        [ 'cls':'gsIvrZnyydhRealFeeQueryService', 'path': '/openapi/V1/partner/ability/sandbox/query_feeAndBook', 'method': 'POST']
     }
 }
 

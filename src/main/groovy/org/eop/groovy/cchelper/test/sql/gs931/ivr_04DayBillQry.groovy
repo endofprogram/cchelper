@@ -21,7 +21,7 @@ class ivr_04DayBillQry  extends _00Int15CommonOneSqlTest {
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/do_sendSms', 'method': 'POST']
+        ['path': 'business/gs/query_dayBill', 'method': 'POST']
     }
 
     @Override

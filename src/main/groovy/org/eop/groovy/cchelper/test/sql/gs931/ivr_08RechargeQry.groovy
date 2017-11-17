@@ -27,7 +27,7 @@ class ivr_08RechargeQry  extends _00Int15CommonOneSqlTest {
 
     @Override
     List getInParams() {
-        ['startDate','endDate','queryType']
+        ['beginDate','endDate','queryType']
     }
 
     @Override
