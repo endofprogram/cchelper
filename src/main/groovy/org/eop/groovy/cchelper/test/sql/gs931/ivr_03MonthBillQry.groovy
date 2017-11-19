@@ -20,17 +20,17 @@ class ivr_03MonthBillQry  extends _00Int15CommonOneSqlTest {
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/query_monthBillFee', 'method': 'POST']
+        ['path': 'business/gs/monthBillQry', 'method': 'GET']
     }
 
     @Override
     List getInParams() {
-        ['billMonth']
+        ['userMobile','billMonth']
     }
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhMonthBillQueryService', 'path': '/openapi/V1/partner/ability/sandbox/monthBillNewGs', 'method': 'POST']
+        [ 'cls':'gsIvrZnyydhMonthBillQueryService', 'path': '/openapi/V1/partner/ability/production/monthBillNewGs', 'method': 'POST']
     }
 }
 

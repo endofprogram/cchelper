@@ -22,17 +22,17 @@ class ivr_08RechargeQry  extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/query_payHistory', 'method': 'POST' ]
+        ['path': 'business/gs/chargeRecQry', 'method': 'GET' ]
     }
 
     @Override
     List getInParams() {
-        ['beginDate','endDate','queryType']
+        ["userMobile",'beginDate','endDate','queryType']
     }
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhRechargeQueryService', 'path': '/openapi/V1/partner/ability/sandbox/busiRec4cmcc', 'method': 'POST' ]
+        [ 'cls':'gsIvrZnyydhRechargeQueryService', 'path': '/openapi/V1/partner/ability/production/busiRec4cmcc', 'method': 'POST' ]
     }
 }
 

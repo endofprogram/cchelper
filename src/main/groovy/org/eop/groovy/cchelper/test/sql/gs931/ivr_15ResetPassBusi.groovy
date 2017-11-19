@@ -21,16 +21,16 @@ public class ivr_15ResetPassBusi extends _00Int15CommonOneSqlTest{
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/get_userPassword', 'method': 'POST' ]
+        ['path': 'business/gs/resetPwdTrans', 'method': 'POST' ]
     }
 
     @Override
     List getInParams() {
-        []
+        ['userMobile']
     }
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhPwdResetTransactService', 'path': '/openapi/V1/partner/ability/sandbox/passwordReset', 'method': 'POST' ]
+        [ 'cls':'gsIvrZnyydhPwdResetTransactService', 'path': '/openapi/V1/partner/ability/production/passwordReset', 'method': 'POST' ]
     }
 }

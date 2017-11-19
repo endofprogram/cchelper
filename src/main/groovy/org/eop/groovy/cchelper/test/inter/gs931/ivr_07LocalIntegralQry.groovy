@@ -5,6 +5,7 @@ import org.eop.groovy.cchelper.test.inter.AbstractInterTest;
 
 /***
  {
+ "userMobile":"13919318036",
  "yearMonth":"201602"
  }
  ***/
@@ -16,11 +17,11 @@ class ivr_07LocalIntegralQry  extends AbstractInterTest {
 
     @Override
     RestMethodType getMethod() {
-        RestMethodType.POST
+        RestMethodType.GET
     }
 
     @Override
     String getUri() {
-        'business/gs/query_jfjlhd'
+        'business/gs/myPointQry'
     }
 }

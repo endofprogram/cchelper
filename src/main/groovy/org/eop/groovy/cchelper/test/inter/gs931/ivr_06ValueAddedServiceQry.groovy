@@ -5,6 +5,7 @@ import org.eop.groovy.cchelper.test.inter.AbstractInterTest;
 
 /***
  {
+ "userMobile":"13919318036",
      "feeItemId":"80400027",
      "beginDate":"2015-12-01",
      "endDate":"2015-12-31"
@@ -18,11 +19,11 @@ class ivr_06ValueAddedServiceQry  extends AbstractInterTest {
 
     @Override
     RestMethodType getMethod() {
-        RestMethodType.POST
+        RestMethodType.GET
     }
 
     @Override
     String getUri() {
-        'business/gs/query_valueAddedService'
+        'business/gs/spBizQry'
     }
 }

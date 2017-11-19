@@ -5,6 +5,7 @@ import org.eop.groovy.cchelper.test.inter.AbstractInterTest;
 
 /***
  {
+ "userMobile":"13919318036",
  "oldpassword": "1",
  "newpassword": "1",
  }
@@ -22,6 +23,6 @@ class ivr_14ModPassBusi  extends AbstractInterTest {
 
     @Override
     String getUri() {
-        'business/gs/modify_password'
+        'business/gs/modifyPwdTrans'
     }
 }

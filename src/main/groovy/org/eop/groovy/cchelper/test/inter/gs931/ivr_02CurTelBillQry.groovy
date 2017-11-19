@@ -4,7 +4,7 @@ import com.cmos.esbclient.bean.RestMethodType
 import org.eop.groovy.cchelper.test.inter.AbstractInterTest
 /***
  {
-
+ "userMobile":"13919318036"
  }
  ***/
 /**
@@ -15,11 +15,11 @@ class ivr_02CurTelBillQry extends AbstractInterTest {
 
     @Override
     RestMethodType getMethod() {
-        RestMethodType.POST
+        RestMethodType.GET
     }
 
     @Override
     String getUri() {
-        'business/gs/query_curTelBill'
+        'business/gs/realFeeQry'
     }
 }

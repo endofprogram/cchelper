@@ -21,17 +21,17 @@ class ivr_01QryBalance  extends _00Int15CommonOneSqlTest {
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/query_balance', 'method': 'GET']
+        ['path': 'business/gs/balanceQry', 'method': 'GET']
     }
 
     @Override
     List getInParams() {
-        ['queryType']
+        ['userMobile']
     }
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhRemainFeeQueryService', 'path': '/openapi/V1/partner/ability/sandbox/oweFeeSimple', 'method': 'POST']
+        [ 'cls':'gsIvrZnyydhRemainFeeQueryService', 'path': '/openapi/V1/partner/ability/production/oweFeeSimple', 'method': 'POST']
     }
 }
 

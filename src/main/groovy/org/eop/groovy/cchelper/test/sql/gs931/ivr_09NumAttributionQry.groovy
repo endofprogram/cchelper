@@ -20,17 +20,17 @@ class ivr_09NumAttributionQry  extends _00Int15CommonOneSqlTest {
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/check_userPromo', 'method': 'POST' ]
+        ['path': 'business/gs/phoneAreaQry', 'method': 'GET' ]
     }
 
     @Override
     List getInParams() {
-        []
+        ['userMobile']
     }
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhNumAssignQueryService', 'path': '/openapi/V1/partner/ability/sandbox/get_phoneArea', 'method': 'POST' ]
+        [ 'cls':'gsIvrZnyydhPhoneAreaQueryService', 'path': '/openapi/V1/partner/ability/production/get_phoneArea', 'method': 'POST' ]
     }
 }
 

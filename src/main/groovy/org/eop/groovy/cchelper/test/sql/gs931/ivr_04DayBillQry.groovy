@@ -21,17 +21,17 @@ class ivr_04DayBillQry  extends _00Int15CommonOneSqlTest {
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/query_dayBill', 'method': 'POST']
+        ['path': 'business/gs/dayBillQry', 'method': 'GET']
     }
 
     @Override
     List getInParams() {
-        ['regionCode','beginBillDate','endBillDate']
+        ['userMobile','regionCode','beginBillDate','endBillDate']
     }
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhDailyBillQueryService', 'path': '/openapi/V1/partner/ability/sandbox/accBillDaily', 'method': 'POST']
+        [ 'cls':'gsIvrZnyydhDailyBillQueryService', 'path': '/openapi/V1/partner/ability/production/accBillDaily', 'method': 'POST']
     }
 }
 

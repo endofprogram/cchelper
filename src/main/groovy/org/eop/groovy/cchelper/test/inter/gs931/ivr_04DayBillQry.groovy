@@ -5,6 +5,7 @@ import org.eop.groovy.cchelper.test.inter.AbstractInterTest;
 
 /***
  {
+ "userMobile":"13919318036",
      "regionCode":"931",
      "beginBillDate":"20160101",
      "endBillDate":"20160102"
@@ -18,11 +19,11 @@ class ivr_04DayBillQry extends AbstractInterTest {
 
     @Override
     RestMethodType getMethod() {
-        RestMethodType.POST
+        RestMethodType.GET
     }
 
     @Override
     String getUri() {
-        'business/gs/query_dayBill'
+        'business/gs/dayBillQry'
     }
 }

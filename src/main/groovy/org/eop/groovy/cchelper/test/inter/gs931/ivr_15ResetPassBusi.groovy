@@ -5,7 +5,7 @@ import org.eop.groovy.cchelper.test.inter.AbstractInterTest;
 
 /***
  {
-
+ "userMobile":"13919318036"
  }
  ***/
 /**
@@ -21,6 +21,6 @@ class ivr_15ResetPassBusi  extends AbstractInterTest {
 
     @Override
     String getUri() {
-        'business/gs/get_userPassword'
+        'business/gs/resetPwdTrans'
     }
 }

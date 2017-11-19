@@ -5,7 +5,7 @@ import org.eop.groovy.cchelper.test.inter.AbstractInterTest;
 
 /***
  {
-
+ "userMobile":"13919318036"
  }
  ***/
 /**
@@ -16,11 +16,11 @@ class ivr_09NumAttributionQry  extends AbstractInterTest {
 
     @Override
     RestMethodType getMethod() {
-        RestMethodType.POST
+        RestMethodType.GET
     }
 
     @Override
     String getUri() {
-        'business/gs/check_userPromo'
+        'business/gs/phoneAreaQry'
     }
 }

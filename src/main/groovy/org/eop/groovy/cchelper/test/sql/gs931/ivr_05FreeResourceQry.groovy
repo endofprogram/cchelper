@@ -21,17 +21,18 @@ class ivr_05FreeResourceQry  extends _00Int15CommonOneSqlTest {
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/query_freeResource', 'method': 'POST']
+        ['path': 'business/gs/mealFlowRmnQry', 'method': 'GET']
     }
 
     @Override
     List getInParams() {
-        ['month']
+        //month可为空，注意修改sql
+        [ "userMobile",'month']
     }
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhMealFlowUsedQueryService', 'path': '/openapi/V1/partner/ability/sandbox/feeResource', 'method': 'POST']
+        [ 'cls':'gsIvrZnyydhMealFlowUsedQueryService', 'path': '/openapi/V1/partner/ability/production/feeResource', 'method': 'POST']
     }
 }
 

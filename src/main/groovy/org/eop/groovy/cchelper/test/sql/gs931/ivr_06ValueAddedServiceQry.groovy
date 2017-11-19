@@ -21,17 +21,17 @@ class ivr_06ValueAddedServiceQry  extends _00Int15CommonOneSqlTest {
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/query_valueAddedService', 'method': 'POST' ]
+        ['path': 'business/gs/spBizQry', 'method': 'GET' ]
     }
 
     @Override
     List getInParams() {
-        ['feeItemId','beginDate','endDate']
+        ["userMobile",'feeItemId','beginDate','endDate']
     }
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhValuedBusinessQueryService', 'path': '/openapi/V1/partner/ability/sandbox/feeSpInfo4cmcc', 'method': 'POST' ]
+        [ 'cls':'gsIvrZnyydhValuedBusinessQueryService', 'path': '/openapi/V1/partner/ability/production/feeSpInfo4cmcc', 'method': 'POST' ]
     }
 }
 

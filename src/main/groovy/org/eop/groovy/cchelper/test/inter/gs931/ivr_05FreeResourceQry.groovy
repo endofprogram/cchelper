@@ -7,6 +7,7 @@ import org.eop.groovy.cchelper.test.inter.AbstractInterTest;
 
 /***
  {
+ "userMobile":"13919318036",
  "month":"201601"
  }
  ***/
@@ -18,11 +19,11 @@ class ivr_05FreeResourceQry  extends AbstractInterTest {
 
     @Override
     RestMethodType getMethod() {
-        RestMethodType.POST
+        RestMethodType.GET
     }
 
     @Override
     String getUri() {
-        'business/gs/query_freeResource'
+        'business/gs/mealFlowRmnQry'
     }
 }

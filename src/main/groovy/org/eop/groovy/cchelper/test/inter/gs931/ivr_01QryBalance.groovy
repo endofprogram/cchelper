@@ -3,7 +3,7 @@ import org.eop.groovy.cchelper.test.inter.AbstractInterTest
 import com.cmos.esbclient.bean.RestMethodType
 /***
  {
- "queryType":"1"
+ "userMobile":"13919318036"
  }
  ***/
 /**
@@ -19,7 +19,7 @@ class ivr_01QryBalance extends AbstractInterTest {
 
     @Override
     String getUri() {
-        'business/gs/query_balance'
+        'business/gs/balanceQry'
     }
 
 }

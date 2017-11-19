@@ -21,16 +21,16 @@ public class ivr_14ModPassBusi extends _00Int15CommonOneSqlTest{
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/modify_password', 'method': 'POST' ]
+        ['path': 'business/gs/modifyPwdTrans', 'method': 'POST' ]
     }
 
     @Override
     List getInParams() {
-        ['oldpassword','newpassword']
+        ['userMobile', 'oldpassword','newpassword']
     }
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhPwdChangeTransactService', 'path': '/openapi/V1/partner/ability/sandbox/changePwd', 'method': 'POST' ]
+        [ 'cls':'gsIvrZnyydhPwdChangeTransactService', 'path': '/openapi/V1/partner/ability/production/changePwd', 'method': 'POST' ]
     }
 }
