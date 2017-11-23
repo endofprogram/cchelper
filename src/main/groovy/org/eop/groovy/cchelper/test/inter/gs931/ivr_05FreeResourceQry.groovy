@@ -7,8 +7,7 @@ import org.eop.groovy.cchelper.test.inter.AbstractInterTest;
 
 /***
  {
- "userMobile":"13919318036",
- "month":"201601"
+ "userMobile":"13919318036"
  }
  ***/
 /**

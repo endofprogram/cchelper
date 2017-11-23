@@ -5,7 +5,7 @@ import org.eop.groovy.cchelper.test.inter.AbstractInterTest
 
 /***
  {
- "userMobile":"13919318036"
+ "userMobile":"13919176115"
  }
  ***/
 class i01rtimeFeeQry extends AbstractInterTest {

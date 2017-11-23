@@ -26,7 +26,7 @@ public class ivr_14ModPassBusi extends _00Int15CommonOneSqlTest{
 
     @Override
     List getInParams() {
-        ['userMobile', 'oldpassword','newpassword']
+        ['userMobile', 'oldPassword','newPassword']
     }
 
     @Override

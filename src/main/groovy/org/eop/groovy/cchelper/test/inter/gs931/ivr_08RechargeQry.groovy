@@ -5,10 +5,7 @@ import org.eop.groovy.cchelper.test.inter.AbstractInterTest;
 
 /***
  {
- "userMobile":"13919318036",
- "beginDate":"2015-1-1",
- "endDate":"2015-5-1",
- "queryType":"1"
+ "userMobile":"13919318036"
  }
  ***/
 /**
