@@ -4,7 +4,7 @@ class i10MonthBillQry extends _00Int15CommonOneSqlTest {
 
     @Override
     String getSqlFilePrefix() {
-        '10'
+        'i10'
     }
 
     @Override

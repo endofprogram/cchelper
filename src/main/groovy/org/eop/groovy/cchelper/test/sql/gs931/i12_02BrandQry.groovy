@@ -4,7 +4,7 @@ class i12_02BrandQry extends _00Int15CommonOneSqlTest {
 
     @Override
     String getSqlFilePrefix() {
-        '12_02'
+        'i12_02'
     }
 
     @Override
