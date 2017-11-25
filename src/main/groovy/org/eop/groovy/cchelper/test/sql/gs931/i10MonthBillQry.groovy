@@ -9,7 +9,7 @@ class i10MonthBillQry extends _00Int15CommonOneSqlTest {
 
     @Override
     String getDistinctName() {
-        '月账单查询'
+        '月账单明细查询电商'
     }
 
     @Override
@@ -19,7 +19,7 @@ class i10MonthBillQry extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/monBillQry', 'method': 'GET']
+        ['path': 'business/gs/monthBillDtlQry', 'method': 'GET']
     }
 
     @Override
@@ -29,6 +29,6 @@ class i10MonthBillQry extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsMonthsBillQueryService', 'path': '/openapi/V1/partner/ability/production/queryMonthBillNewForJituan', 'method': 'POST']
+        [ 'cls':'gsMonthsBillQueryService', 'path': '/openapi/V1/partner/ability/production/monthBillNewGs4cmcc', 'method': 'POST']
     }
 }
