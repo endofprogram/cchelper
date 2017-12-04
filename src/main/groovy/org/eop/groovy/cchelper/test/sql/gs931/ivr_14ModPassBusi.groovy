@@ -21,7 +21,7 @@ public class ivr_14ModPassBusi extends _00Int15CommonOneSqlTest{
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/modifyPwdTrans', 'method': 'POST' ]
+        ['path': 'business/gs/oldPwdTrans', 'method': 'POST' ]
     }
 
     @Override

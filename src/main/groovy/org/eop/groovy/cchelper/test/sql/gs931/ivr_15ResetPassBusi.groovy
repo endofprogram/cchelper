@@ -21,7 +21,7 @@ public class ivr_15ResetPassBusi extends _00Int15CommonOneSqlTest{
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/resetPwdTrans', 'method': 'POST' ]
+        ['path': 'business/gs/newPwdTrans', 'method': 'POST' ]
     }
 
     @Override
