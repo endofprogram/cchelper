@@ -21,16 +21,16 @@ public class ivr_12FlowPackageBusi extends _00Int15CommonOneSqlTest{
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/busi_acceptProm', 'method': 'POST' ]
+        ['path': 'business/gs/flowPackageBusiTrans', 'method': 'POST' ]
     }
 
     @Override
     List getInParams() {
-        []
+        ['userMobile','prodId', 'actionType','veType']
     }
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhFlowTransactService', 'path': '/openapi/V1/partner/ability/sandbox/productChangePlanProd4cmcc', 'method': 'POST' ]
+        [ 'cls':'gsIvrZnyydhFlowTransactService', 'path': '/openapi/V1/partner/ability/production/productChangePlanProd4cmcc', 'method': 'POST' ]
     }
 }
