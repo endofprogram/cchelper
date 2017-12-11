@@ -19,7 +19,7 @@ public class ivr_10OpenOnlineBusi extends _00Int15CommonOneSqlTest{
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/openOnlineBusiTrans', 'method': 'POST' ]
+        ['path': 'business/gs/networkBusiTrans', 'method': 'PUT' ]
     }
 
     @Override

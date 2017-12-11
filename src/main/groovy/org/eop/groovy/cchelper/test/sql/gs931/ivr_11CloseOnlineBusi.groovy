@@ -21,7 +21,7 @@ public class ivr_11CloseOnlineBusi extends _00Int15CommonOneSqlTest{
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/closeOnlineBusiTrans', 'method': 'POST' ]
+        ['path': 'business/gs/networkBusiTrans', 'method': 'DELETE' ]
     }
 
     @Override
