@@ -17,7 +17,7 @@ class ivr_01QryBalance  extends _00Int15CommonOneSqlTest {
 
     @Override
     String getDepKey() {
-        ''
+        'remainFee'
     }
     @Override
     Map getInIntfMap() {
