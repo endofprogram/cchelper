@@ -21,16 +21,16 @@ public class ivr_11CloseOnlineBusi extends _00Int15CommonOneSqlTest{
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/query_closeOnlineBusi', 'method': 'POST' ]
+        ['path': 'business/gs/networkBusiTrans', 'method': 'DELETE' ]
     }
 
     @Override
     List getInParams() {
-        []
+        ['userMobile', 'actionType','veType']
     }
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhNetworkTransactService', 'path': '/openapi/V1/partner/ability/sandbox/productChangePlanProd4cmcc', 'method': 'POST' ]
+        [ 'cls':'gsIvrZnyydhNetworkTransactService', 'path': '/openapi/V1/partner/ability/production/productChangePlanProd4cmcc', 'method': 'POST' ]
     }
 }

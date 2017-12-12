@@ -19,43 +19,17 @@ public class ivr_10OpenOnlineBusi extends _00Int15CommonOneSqlTest{
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/query_openOnlineBusi', 'method': 'POST' ]
+        ['path': 'business/gs/networkBusiTrans', 'method': 'PUT' ]
     }
 
     @Override
     List getInParams() {
-        []
+        ['userMobile', 'actionType','veType']
     }
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhNetworkTransactService', 'path': '/openapi/V1/partner/ability/sandbox/productChangePlanProd4cmcc', 'method': 'POST' ]
+        [ 'cls':'gsIvrZnyydhNetworkTransactService', 'path': '/openapi/V1/partner/ability/production/productChangePlanProd4cmcc', 'method': 'POST' ]
     }
 }
 
-/**
- * "serviceContent":{
- "newBrand":"1",
- "newPlanId":"1",
- "validType":"0",
- "prodInfoList":[
- {
- "prodId":"01",
- "actionType":"1",
- "veType":"2",
- "prodType":"4",
- "busType":"shouli","serviceId":"001",
- "preProdId":"p001"
- },
- {
- "prodId":"02",
- "actionType":"1",
- "veType":"2",
- "prodType":"4",
- "busType":"shouli",
- "serviceId":"001",
- "preProdId":"p001"
- }
- ]
- }
- */

@@ -3,16 +3,16 @@ package org.eop.groovy.cchelper.test.sql.gs931;
 import java.util.List;
 import java.util.Map;
 
-public class ivr_12FlowPackageBusi extends _00Int15CommonOneSqlTest{
+public class ivr_102MobilePayBusi extends _00Int15CommonOneSqlTest{
 
     @Override
     String getSqlFilePrefix() {
-        'ivr_12'
+        'ivr_102'
     }
 
     @Override
     String getDistinctName() {
-        '移动数据流量套餐'
+        '手机支付'
     }
 
     @Override
@@ -21,16 +21,16 @@ public class ivr_12FlowPackageBusi extends _00Int15CommonOneSqlTest{
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/flowPackageBusiTrans', 'method': 'POST' ]
+        ['path': 'business/gs/mobilePayBusiTrans', 'method': 'POST' ]
     }
 
     @Override
     List getInParams() {
-        ['userMobile','prodId', 'actionType','veType']
+        ['userMobile', 'actType']
     }
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhFlowTransactService', 'path': '/openapi/V1/partner/ability/production/productChangePlanProd4cmcc', 'method': 'POST' ]
+        [ 'cls':'gsIvrZnyydhMobilePayTransactService', 'path': '/openapi/V1/partner/ability/production/so_userRadiusAccept4cmcc', 'method': 'POST' ]
     }
 }

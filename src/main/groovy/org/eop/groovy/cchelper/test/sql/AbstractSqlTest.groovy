@@ -193,7 +193,7 @@ where m.`INTF_ID` = $inInterfaceId and m.`MAPNG_INTF_ID` = $outInterfaceId and m
 		"""\
 /* 渠道权限 */
 INSERT INTO `bs_in_chnannel_auth` (`JNUP_CHNL_PRIV_ID`, `JNUP_CHNL_ID`, `JNUP_INTF_ID`, `SYS_STS_CD`, `CRT_TIME`)
-select (select max(cast(a.jnup_chnl_priv_id as signed)) + 1 from bs_in_chnannel_auth a), (select c.chnl_id from bs_interface_channel c where c.sys_id = (select b.biz_sys_id from bs_busi_system b where b.biz_sys_code = 'NGBUSI')), $inInterfaceId, '1', now();
+select (select max(cast(a.jnup_chnl_priv_id as signed)) + 1 from bs_in_chnannel_auth a), (select c.chnl_id from bs_interface_channel c where c.sys_id = (select b.biz_sys_id from bs_busi_system b where b.biz_sys_code = 'NGCRMPF')), $inInterfaceId, '1', now();
 
 """
 	}
@@ -235,7 +235,7 @@ select (select max(cast(c.id as signed)) + 1 from bs_callback_uniform c), $chann
 	}
 	
 	String getCrmpfBusiSystemId() {
-		"""(select b.biz_sys_id from bs_busi_system b where b.biz_sys_code = 'NGBUSI')"""
+		"""(select b.biz_sys_id from bs_busi_system b where b.biz_sys_code = 'NGCRMPF')"""
 	}
 	
 	String getBusiSystemId() {

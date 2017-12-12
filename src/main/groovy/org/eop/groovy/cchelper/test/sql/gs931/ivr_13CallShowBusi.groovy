@@ -21,16 +21,16 @@ public class ivr_13CallShowBusi extends _00Int15CommonOneSqlTest{
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/query_callShowBusi', 'method': 'POST' ]
+        ['path': 'business/gs/callShowBusiTrans', 'method': 'POST' ]
     }
 
     @Override
     List getInParams() {
-        []
+        ['userMobile', 'actionType','veType']
     }
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhCallDisplayTransactService', 'path': '/openapi/V1/partner/ability/sandbox/productChangePlanProd4cmcc', 'method': 'POST' ]
+        [ 'cls':'gsIvrZnyydhCallDisplayTransactService', 'path': '/openapi/V1/partner/ability/production/productChangePlanProd4cmcc', 'method': 'POST' ]
     }
 }
