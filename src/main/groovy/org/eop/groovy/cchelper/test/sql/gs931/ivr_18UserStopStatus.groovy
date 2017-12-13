@@ -9,7 +9,7 @@ package org.eop.groovy.cchelper.test.sql.gs931
 /**
  * @author mafuliang
  */
-    class ivr_18UserStatus extends _00Int15CommonOneSqlTest {
+    class ivr_18UserStopStatus extends _00Int15CommonOneSqlTest {
 
 
         @Override
@@ -24,11 +24,11 @@ package org.eop.groovy.cchelper.test.sql.gs931
 
         @Override
         String getDepKey() {
-            'usertkjStatus'
+            'userStopStatus'
         }
         @Override
         Map getInIntfMap() {
-            ['path': 'business/gs/myUserStatus', 'method': 'GET' ]
+            ['path': 'business/gs/myUserStopStatus', 'method': 'GET' ]
         }
 
         @Override
@@ -38,7 +38,7 @@ package org.eop.groovy.cchelper.test.sql.gs931
 
         @Override
         Map getOutIntfMap() {
-            [ 'cls':'gsIvrZnyydhUserStatusQueryService', 'path': '/openapi/V1/partner/ability/production/userStopStatus', 'method': 'POST' ]
+            [ 'cls':'gsIvrZnyydhUserStopStatusQueryService', 'path': '/openapi/V1/partner/ability/production/userStopStatus', 'method': 'POST' ]
         }
 
     }
