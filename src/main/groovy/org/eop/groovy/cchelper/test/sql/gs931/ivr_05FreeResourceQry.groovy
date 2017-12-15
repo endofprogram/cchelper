@@ -1,7 +1,8 @@
 package org.eop.groovy.cchelper.test.sql.gs931
 
-import org.eop.groovy.cchelper.test.sql.AbstractSqlTest
-import org.junit.Test
+/**
+ * @deprecated month可为空，注意修改sql
+ */
 
 class ivr_05FreeResourceQry  extends _00Int15CommonOneSqlTest {
 
