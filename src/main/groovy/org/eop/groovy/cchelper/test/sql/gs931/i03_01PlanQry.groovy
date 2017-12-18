@@ -29,7 +29,7 @@ class i03_01PlanQry extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        ['cls': 'gsUserPlanQueryService', 'path': 'https://partner.cmccgs.cn/openapi/V1/partner/ability/production/userCurAndNextPlan', 'method': 'POST']
+        ['cls': 'gsUserPlanQueryService', 'path': '/openapi/V1/partner/ability/production/userCurAndNextPlan', 'method': 'POST']
     }
 }
 
