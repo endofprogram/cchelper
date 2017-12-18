@@ -38,7 +38,7 @@ package org.eop.groovy.cchelper.test.sql.gs931
 
         @Override
         Map getOutIntfMap() {
-            [ 'cls':'gsIvrZnyydhUserStopStatusQueryService', 'path': '/openapi/V1/partner/ability/production/userStopStatus', 'method': 'POST' ]
+            [ 'cls':'gsIvrZnyydhUserStopStatusQueryService', 'path': '/openapi/V1/partner/ability/production/userStopStatus4cmcc', 'method': 'POST' ]
         }
 
     }
