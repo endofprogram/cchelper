@@ -9,12 +9,12 @@ package org.eop.groovy.cchelper.test.sql.gs931
 /**
  * @author mafuliang
  */
-    class ivr_18UserStopStatus extends _00Int15CommonOneSqlTest {
+    class ivr_24UserStopStatus extends _00Int15CommonOneSqlTest {
 
 
         @Override
         String getSqlFilePrefix() {
-            'ivr_18'
+            'ivr_24'
         }
 
         @Override

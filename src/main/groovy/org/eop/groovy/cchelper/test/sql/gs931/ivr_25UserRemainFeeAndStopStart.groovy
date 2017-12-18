@@ -1,9 +1,9 @@
 package org.eop.groovy.cchelper.test.sql.gs931
 
-class ivr_19UserRemainFeeAndStopStart extends _00Int15CommonUnionSqlTest{
+class ivr_25UserRemainFeeAndStopStart extends _00Int15CommonUnionSqlTest{
     @Override
     String getSqlFilePrefix() {
-        'ivr_19'
+        'ivr_25'
     }
 
     @Override
