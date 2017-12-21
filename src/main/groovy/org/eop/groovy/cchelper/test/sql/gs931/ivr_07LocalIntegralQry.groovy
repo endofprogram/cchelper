@@ -34,12 +34,12 @@ class ivr_07LocalIntegralQry extends _00Int15CommonOneSqlTest {
 
     @Override
     List getInParams() {
-        ["userMobile",'yearMonth']
+        ["userMobile"]
     }
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhPointQueryService', 'path': '/openapi/V1/partner/ability/production/userCoinPeriodRec4cmcc', 'method': 'POST' ]
+        [ 'cls':'gsIvrZnyydhPointQueryService', 'path': '/openapi/V1/partner/ability/production/userCoinEx', 'method': 'POST' ]
     }
 
 }
