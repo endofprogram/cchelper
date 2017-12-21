@@ -3,16 +3,16 @@ package org.eop.groovy.cchelper.test.sql.gs931;
 import java.util.List;
 import java.util.Map;
 
-public class ivr_103NightFlowBusi extends _00Int15CommonOneSqlTest{
+public class ivr_16ColorRingBusi extends _00Int15CommonOneSqlTest{
 
     @Override
     String getSqlFilePrefix() {
-        'ivr_103'
+        'ivr_16'
     }
 
     @Override
     String getDistinctName() {
-        '夜间流量包'
+        '彩铃'
     }
 
     @Override
@@ -21,7 +21,7 @@ public class ivr_103NightFlowBusi extends _00Int15CommonOneSqlTest{
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/nightFlowBusiTrans', 'method': 'POST' ]
+        ['path': 'business/gs/colorRingBusiTrans', 'method': 'POST' ]
     }
 
     @Override
@@ -31,7 +31,7 @@ public class ivr_103NightFlowBusi extends _00Int15CommonOneSqlTest{
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhNightFlowTransactService', 'path': '/openapi/V1/partner/ability/production/productChangePlanProd4cmcc', 'method': 'POST' ]
+        [ 'cls':'gsIvrZnyydhColorRingTransactService', 'path': '/openapi/V1/partner/ability/production/productChangePlanProd4cmcc', 'method': 'POST' ]
     }
 }
 

@@ -3,16 +3,16 @@ package org.eop.groovy.cchelper.test.sql.gs931;
 import java.util.List;
 import java.util.Map;
 
-public class ivr_15ResetPassBusi extends _00Int15CommonOneSqlTest{
+public class ivr_17CallShowBusi extends _00Int15CommonOneSqlTest{
 
     @Override
     String getSqlFilePrefix() {
-        'ivr_15'
+        'ivr_17'
     }
 
     @Override
     String getDistinctName() {
-        '重置密码'
+        '来电显示'
     }
 
     @Override
@@ -21,16 +21,16 @@ public class ivr_15ResetPassBusi extends _00Int15CommonOneSqlTest{
     }
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/newPwdTrans', 'method': 'POST' ]
+        ['path': 'business/gs/callShowBusiTrans', 'method': 'POST' ]
     }
 
     @Override
     List getInParams() {
-        ['userMobile']
+        ['userMobile', 'actionType','veType']
     }
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhPwdResetTransactService', 'path': '/openapi/V1/partner/ability/production/passwordReset', 'method': 'POST' ]
+        [ 'cls':'gsIvrZnyydhCallDisplayTransactService', 'path': '/openapi/V1/partner/ability/production/productChangePlanProd4cmcc', 'method': 'POST' ]
     }
 }

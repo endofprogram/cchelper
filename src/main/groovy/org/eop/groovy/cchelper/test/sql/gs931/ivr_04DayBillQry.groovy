@@ -26,7 +26,7 @@ class ivr_04DayBillQry  extends _00Int15CommonOneSqlTest {
 
     @Override
     List getInParams() {
-        ['userMobile','regionCode','beginDate','endDate']
+        ['userMobile','beginDate','endDate']
     }
 
     @Override

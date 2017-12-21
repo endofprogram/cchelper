@@ -1,8 +1,9 @@
 package org.eop.groovy.cchelper.test.sql.gs931
 
-import org.eop.groovy.cchelper.test.sql.AbstractSqlTest
-import org.junit.Test
 
+/**
+ * @deprecated 月份可为空，注意修改sql
+ */
 class ivr_08RechargeQry  extends _00Int15CommonOneSqlTest {
 
     @Override
@@ -27,7 +28,8 @@ class ivr_08RechargeQry  extends _00Int15CommonOneSqlTest {
 
     @Override
     List getInParams() {
-        ["userMobile",'beginDate','endDate','queryType']
+        //月份可为空，注意修改sql
+        ["userMobile",'beginDate','endDate']
     }
 
     @Override

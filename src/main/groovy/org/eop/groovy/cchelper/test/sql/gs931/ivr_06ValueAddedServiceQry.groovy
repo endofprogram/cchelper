@@ -26,12 +26,12 @@ class ivr_06ValueAddedServiceQry  extends _00Int15CommonOneSqlTest {
 
     @Override
     List getInParams() {
-        ["userMobile",'feeItemId','beginDate','endDate']
+        ["userMobile"]
     }
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsIvrZnyydhValuedBusinessQueryService', 'path': '/openapi/V1/partner/ability/production/feeSpInfo4cmcc', 'method': 'POST' ]
+        [ 'cls':'gsIvrZnyydhValuedBusinessQueryService', 'path': '/openapi/V1/partner/ability/production/query_allRadiusInfo', 'method': 'POST' ]
     }
 }
 
