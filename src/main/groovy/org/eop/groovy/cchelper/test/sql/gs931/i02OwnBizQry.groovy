@@ -14,7 +14,7 @@ class i02OwnBizQry extends _00Int15CommonUnionSqlTest {
 
     @Override
     List getDeps() {
-        ['已有计划和产品', '办理活动查询']
+        ['已有计划和产品', '办理活动查询', '查询在用梦网业务']
     }
 
     @Override

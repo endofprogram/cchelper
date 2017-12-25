@@ -1,6 +1,6 @@
 package org.eop.groovy.cchelper.test.sql.gs931
 
-class i03_03MoBizQry extends _00Int15CommonOneSqlTest {
+class i02_03MoBizQry extends _00Int15CommonOneSqlTest {
 
     @Override
     String getSqlFilePrefix() {
@@ -29,6 +29,6 @@ class i03_03MoBizQry extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        ['cls': 'gsUserCurMoBizQueryService', 'path': '/openapi/V1/partner/ability/production/queryAllRadiusInfo', 'method': 'POST']
+        ['cls': 'gsUserCurMoBizQueryService', 'path': '/openapi/V1/partner/ability/production/query_allRadiusInfo', 'method': 'POST']
     }
 }
