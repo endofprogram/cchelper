@@ -23,7 +23,7 @@ abstract class _00Int15CommonOneSqlTest extends AbstractSqlTest {
 
     @Override
     Map getSqlFile() {
-        [dir: 'E:\\Work\\甘肃在线公司\\甘肃在线公司\\需求\\IVR智能语音导航\\数据库\\测试环境\\', name: """${sqlFilePrefix}${distinctName}"""]
+        [dir: 'F:\\sql\\', name: """${sqlFilePrefix}${distinctName}"""]
     }
 
     @Override
