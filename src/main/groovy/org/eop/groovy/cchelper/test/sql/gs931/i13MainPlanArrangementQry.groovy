@@ -28,6 +28,6 @@ class i13MainPlanArrangementQry extends _00Int15CommonOneSqlTest{
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsMainPlanArrangementService', 'path': '/openapi/V1/partner/ability/sandbox/userChangePlanProd', 'method': 'POST']
+        [ 'cls':'gsMainPlanArrangementService', 'path': '/openapi/V1/partner/ability/production/userChangePlanProd', 'method': 'POST']
     }
 }
