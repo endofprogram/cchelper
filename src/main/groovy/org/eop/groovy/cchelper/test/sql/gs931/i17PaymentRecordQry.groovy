@@ -7,6 +7,7 @@ class i17PaymentRecordQry extends _00Int15CommonOneSqlTest {
         "i17"
     }
 
+
         @Override
         String getDistinctName() {
             "缴费历史查询"
