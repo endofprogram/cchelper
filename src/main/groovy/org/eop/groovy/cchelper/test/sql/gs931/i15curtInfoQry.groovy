@@ -28,7 +28,7 @@ class i15curtInfoQry extends _00Int15CommonOneSqlTest{
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsCustInfoQueryService', 'path': '/openapi/V1/partner/ability/sandbox/query_custInfo', 'method': 'POST']
+        [ 'cls':'gsCustInfoQueryService', 'path': '/openapi/V1/partner/ability/production/query_custInfo', 'method': 'POST']
     }
 
 }
