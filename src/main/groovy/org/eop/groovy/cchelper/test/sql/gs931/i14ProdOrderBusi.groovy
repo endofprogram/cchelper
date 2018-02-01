@@ -24,7 +24,7 @@ class i14ProdOrderBusi extends _00Int15CommonUnionSqlTest{
 
     @Override
     List getInParams() {
-        ['userMobile','oprCode','productId','prodType','effectiveType','busiType','spId','servCode']
+        ['userMobile','productType','oprCode','productId','prodType','effectiveType','busiType','spId','bizCode']
     }
 
     @Override

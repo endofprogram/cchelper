@@ -32,6 +32,6 @@ class i16PointRecQry extends _00Int15CommonOneSqlTest {
 
 	@Override
 	Map getOutIntfMap() {
-		[ 'cls':'gsPointRecQueryService', 'path': '/openapi/V1/partner/ability/sandbox/coinBusiRec4cmcc', 'method': 'POST']
+		[ 'cls':'gsPointRecQueryService', 'path': '/openapi/V1/partner/ability/production/coinBusiRec4cmcc', 'method': 'POST']
 	}
 }
