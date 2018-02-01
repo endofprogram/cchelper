@@ -20,7 +20,7 @@ class i17PaymentRecordQry extends _00Int15CommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsPaymentRecordQueryService', 'path': '/openapi/V1/partner/ability/production/busiRec4cmcc', 'method': 'POST']
+        [ 'cls':'gsPaymentRecordQueryService', 'path': '/openapi/V1/partner/ability/sandbox/busiRec4cmcc', 'method': 'POST']
     }
 
     @Override
