@@ -29,7 +29,7 @@ class i14_01ProductAcceptBusi extends _00Int15CommonOneSqlTest{
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsProductAcceptService', 'path': '/openapi/V1/partner/ability/sandbox/productChangePlanProd4cmcc', 'method': 'POST']
+        [ 'cls':'gsProductAcceptService', 'path': '/openapi/V1/partner/ability/production/productChangePlanProd4cmcc', 'method': 'POST']
     }
 
 }
