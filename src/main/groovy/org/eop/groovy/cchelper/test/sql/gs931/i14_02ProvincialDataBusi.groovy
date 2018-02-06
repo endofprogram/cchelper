@@ -19,7 +19,7 @@ class i14_02ProvincialDataBusi extends _00Int15CommonOneSqlTest{
 
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/provincialDataBusiTrans', 'method': 'post']
+        ['path': 'business/gs/provincialDataBusiTrans', 'method': 'POST']
     }
 
     @Override

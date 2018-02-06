@@ -19,7 +19,7 @@ class i14_01ProductAcceptBusi extends _00Int15CommonOneSqlTest{
 
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/productAcceptBusiTrans', 'method': 'post']
+        ['path': 'business/gs/productAcceptBusiTrans', 'method': 'POST']
     }
 
     @Override
