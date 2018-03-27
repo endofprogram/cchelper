@@ -14,7 +14,7 @@ class GsBroadbandArrearageInfoQueryService extends BroadbandByNengkaiCommonOneSq
 	String getDistinctName() {
 		'查询宽带帐号状态-是否欠费接口'
 	}
-
+  
 	@Override
 	String getDepKey() {
 		'BroadbandArrearageInfo'
