@@ -33,7 +33,7 @@ class GsDetailBillInfoQueryService  extends BroadbandByNengkaiCommonOneSqlTest {
 	
 		@Override
 		Map getOutIntfMap() {
-			[ 'cls':'gsDetailBillInfoQueryOutService', 'path': '/openapi/V1/Party/Charge/Bill/queryBroadbandDetailBill4Online', 'method': 'POST']
+			[ 'cls':'gsDetailBillInfoQueryOutService', 'path': '/openapi/V1/Charge/Bill/queryBroadbandDetailBill4Online', 'method': 'POST']
 		}
 	}
 	
