@@ -33,6 +33,6 @@ class GsBaseInfoBroadbandQueryService  extends BroadbandByNengkaiCommonOneSqlTes
 	
 		@Override
 		Map getOutIntfMap() {
-			[ 'cls':'gsBaseInfoBroadbandQueryOutService', 'path': '/openapi/V1/Party/User/queryBroadbandUserInformation4Online', 'method': 'POST']
+			[ 'cls':'gsBaseInfoBroadbandQueryOutService', 'path': '/openapi/V1/Party/User/queryBroadbandBasicInfo4Online', 'method': 'POST']
 		}
 	}
