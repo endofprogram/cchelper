@@ -28,7 +28,7 @@ class GsDetailBillInfoQueryService  extends BroadbandByNengkaiCommonOneSqlTest {
 	
 		@Override
 		List getInParams() {
-			['busiCode','acount']
+			['srvCode','acount']
 		}
 	
 		@Override

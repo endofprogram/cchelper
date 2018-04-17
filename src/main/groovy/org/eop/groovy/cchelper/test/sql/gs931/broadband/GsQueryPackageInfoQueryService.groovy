@@ -28,7 +28,7 @@ class GsQueryPackageInfoQueryService  extends BroadbandByNengkaiCommonOneSqlTest
 	
 		@Override
 		List getInParams() {
-			['busiCode']
+			['srvCode']
 		}
 	
 		@Override
