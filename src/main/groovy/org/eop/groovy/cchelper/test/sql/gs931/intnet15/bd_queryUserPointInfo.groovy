@@ -18,7 +18,7 @@ class bd_queryUserPointInfo extends Inter15ByNengKaiCommonManySqlTest{
 
     @Override
     Map getInIntfMap() {
-        ['path': 'business/gs/unicPointQry', 'method': 'GET']
+        ['path': 'business/gs/pointQry', 'method': 'GET']
     }
 
     @Override
