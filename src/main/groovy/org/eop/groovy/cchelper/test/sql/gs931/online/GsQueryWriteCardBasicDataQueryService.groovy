@@ -26,7 +26,7 @@ class GsQueryWriteCardBasicDataQueryService extends OnlineByNengkaiCommonOneSqlT
 	}                                                
 	@Override
 	public List getInParams() {
-		['transactionID'];
+		['transactionID','reqInfo'];
 	}
 
 	@Override

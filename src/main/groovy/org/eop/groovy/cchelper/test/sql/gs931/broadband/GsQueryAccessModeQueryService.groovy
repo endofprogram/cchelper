@@ -28,6 +28,6 @@ class GsQueryAccessModeQueryService extends BroadbandByNengkaiCommonOneSqlTest {
 
     @Override
     Map getOutIntfMap() {
-        [ 'cls':'gsQueryAccessModeQueryOutService', 'path': '/openapi/V1/Resource/Broadband/queryBroadbandAccessMode4Online', 'method': 'POST']
+        [ 'cls':'gsQueryAccessModeQueryOutService', 'path': '/openapi/V1/Party/User/queryBroadbandAccessMode4Online', 'method': 'POST']
     }
 }

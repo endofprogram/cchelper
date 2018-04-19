@@ -31,7 +31,7 @@ class GsQueryMoreNumQueryService extends OnlineByNengkaiCommonOneSqlTest{
 
 	@Override
 	public Map getOutIntfMap() {
-		[ 'cls':'gsQueryMoreNumQueryOutService', 'path': '/openapi/V1/Party/User/queryMoreNumber4Online', 'method': 'POST']
+		[ 'cls':'gsQueryMoreNumQueryOutService', 'path': '/openapi/V1/Party/Customer/queryMsisdnByCredentials4Online', 'method': 'POST']
 	}
 
 	

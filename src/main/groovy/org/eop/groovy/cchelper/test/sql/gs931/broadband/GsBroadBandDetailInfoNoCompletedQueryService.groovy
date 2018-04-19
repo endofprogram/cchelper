@@ -5,7 +5,7 @@ import java.util.Map
 
 import org.eop.groovy.cchelper.test.sql.gs931.broadband.BroadbandByNengkaiCommonOneSqlTest
 
-class GsBaseInfoBroadbandQueryService  extends BroadbandByNengkaiCommonOneSqlTest {
+class GsBroadBandDetailInfoNoCompletedQueryService  extends BroadbandByNengkaiCommonOneSqlTest {
 	
 		@Override
 		String getSqlFilePrefix() {
@@ -14,16 +14,16 @@ class GsBaseInfoBroadbandQueryService  extends BroadbandByNengkaiCommonOneSqlTes
 	
 		@Override
 		String getDistinctName() {
-			'查询宽带用户的基本信息接口'
+			'查询宽带用户的详细信息_未竣工'
 		}
 	
 		@Override
 		String getDepKey() {
-			'BaseInfoBroadband'
+			'BroadbandDetailInfoNoCompleted'
 		}
 		@Override
 		Map getInIntfMap() {
-			['cls':'gsBaseInfoBroadbandQueryInService','path': 'business/gs/BaseInfoBroadband', 'method': 'GET']
+			['cls':'gsBroadbandDetailInfoQueryInService','path': 'business/gs/BroadbandDetailInfoNoCompleted', 'method': 'GET']
 		}
 	
 		@Override
@@ -33,6 +33,7 @@ class GsBaseInfoBroadbandQueryService  extends BroadbandByNengkaiCommonOneSqlTes
 	
 		@Override
 		Map getOutIntfMap() {
-			[ 'cls':'gsBaseInfoBroadbandQueryOutService', 'path': '/openapi/V1/Party/User/queryBroadbandBasicInfo4Online', 'method': 'POST']
+			[ 'cls':'gsBroadbandDetailInfoNoCompletedQueryOutService', 'path': '/openapi/V1/BizInteraction/Order/queryBroadbandProductsSubscribedByID4Online', 'method': 'POST']
 		}
 	}
+	

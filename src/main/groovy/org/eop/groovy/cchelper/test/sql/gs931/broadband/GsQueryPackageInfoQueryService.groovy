@@ -28,11 +28,11 @@ class GsQueryPackageInfoQueryService  extends BroadbandByNengkaiCommonOneSqlTest
 	
 		@Override
 		List getInParams() {
-			['busiCode']
+			['srvCode']
 		}
 	
 		@Override
 		Map getOutIntfMap() {
-			[ 'cls':'gsQueryPackageInfoQueryOutService', 'path': '/openapi/V1/Party/User/queryBroadbandProductInformation4Online', 'method': 'POST']
+			[ 'cls':'gsQueryPackageInfoQueryOutService', 'path': '/openapi/V1/BizInteraction/Order/queryBroadbandProductTariff4Online', 'method': 'POST']
 		}
 	}

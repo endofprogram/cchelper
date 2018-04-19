@@ -33,7 +33,7 @@ class GsBroadBandDeadlineInfoQueryService  extends BroadbandByNengkaiCommonOneSq
 	
 		@Override
 		Map getOutIntfMap() { 
-			[ 'cls':'gsBroadBandDeadlineInfoQueryOutService', 'path': '/openapi/V1/Party/User/queryBroadbandExpirationInformation4Online', 'method': 'POST']
+			[ 'cls':'gsBroadBandDeadlineInfoQueryOutService', 'path': '/openapi/V1/BizInteraction/Order/queryBroadbandExpiration4Online', 'method': 'POST']
 		}
 	}
 	
