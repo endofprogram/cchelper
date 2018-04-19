@@ -3,7 +3,8 @@ package org.eop.groovy.cchelper.test.sql.gs931.intnet15
 import java.util.List
 import java.util.Map
 
-class GsUserOrderProductQueryService extends Intnet15ByNengkaiCommonOneSqlTest{
+class GsPlanRemian1QueryService extends Intnet15ByNengkaiCommonOneSqlTest{
+
 	@Override
 	public String getSqlFilePrefix() {
 		'int15';
@@ -11,18 +12,18 @@ class GsUserOrderProductQueryService extends Intnet15ByNengkaiCommonOneSqlTest{
 
 	@Override
 	public String getDistinctName() {
-		'用户已订购商品查询';
+		'套餐余量查询(子)';
 	}
 	
 	@Override
 	public String getDepKey() {
-		'UserOrderProduct';
+		'PlanRemian1';
 	}
 
 	@Override
 	public Map getInIntfMap() {
-		['cls':'gsUserOrderProductsQueryInService','path': 'business/gs/UserOrderProduct', 'method': 'GET']
-	}
+		['cls':'gsPlanRemian1QueryInService','path': 'business/gs/PlanRemian1', 'method': 'GET']
+	}                                                
 	@Override
 	public List getInParams() {
 		['userMobile'];
@@ -30,7 +31,9 @@ class GsUserOrderProductQueryService extends Intnet15ByNengkaiCommonOneSqlTest{
 
 	@Override
 	public Map getOutIntfMap() {
-		[ 'cls':'gsUserOrderProductsQueryOutService', 'path': '/openapi/V1/BizInteraction/Order/queryCanSubscribeProducts4Online', 'method': 'POST']
+		[ 'cls':'gsPlanRemian1QueryOutService', 'path': '/openapi/V1/Charge/Allowance/queryPackageAllowance4Online', 'method': 'POST']
 	}
 
+	
+	
 }

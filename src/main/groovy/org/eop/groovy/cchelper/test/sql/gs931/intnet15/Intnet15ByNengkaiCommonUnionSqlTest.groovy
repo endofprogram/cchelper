@@ -48,7 +48,7 @@ abstract class Intnet15ByNengkaiCommonUnionSqlTest extends AbstractSqlTest {
 
     @Override
     Map getInInterface() {
-        [route: '', name: """甘肃能开_互联网_接入_${distinctName}""", clsnm: 'userMobileCommonIntfService', type: '1', path: """${inIntfMap.path}""", bizcode: '', method: """${inIntfMap.method}""", fmttype: 'json', entid: '', desc: """甘肃能开_互联网_接入_${distinctName}(${version}_in)""", biztype: '001']
+        [route: '', name: """甘肃统一接口平台_互联网_接入_${distinctName}""", clsnm: 'userMobileCommonIntfService', type: '1', path: """${inIntfMap.path}""", bizcode: '', method: """${inIntfMap.method}""", fmttype: 'json', entid: '', desc: """甘肃统一接口平台_互联网_接入_${distinctName}(${version}_in)""", biztype: '001']
 	}
 
 	@Override
@@ -84,7 +84,7 @@ abstract class Intnet15ByNengkaiCommonUnionSqlTest extends AbstractSqlTest {
 	List getDependentInterfaces() {
 		def list = []
 		deps.each {
-			list << [desc: """甘肃能开_互联网_接入_${it}(${version}_in)"""]
+			list << [desc: """甘肃统一接口平台_互联网_接入_${it}(${version}_in)"""]
             list << [desc: """甘肃能开_转接_${it}(${version}_out)"""]
 		}
 		list

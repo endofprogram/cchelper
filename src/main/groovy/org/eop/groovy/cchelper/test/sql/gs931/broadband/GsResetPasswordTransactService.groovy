@@ -28,12 +28,12 @@ class GsResetPasswordTransactService extends BroadbandByNengkaiCommonOneSqlTest{
 	}
 	@Override
 	Map getInIntfMap() {
-		['cls':'gsResetPasswordTransactInService','path': 'business/gs/ResetPassword', 'method': 'GET']
+		['cls':'gsResetPasswordTransactInService','path': 'business/gs/ResetPassword', 'method': 'POST']
 	}
 
 	@Override
 	List getInParams() {
-		['account','newPassword','idCard']
+		['account','newPassword']
 	}
 
 	@Override

@@ -26,11 +26,11 @@ class GsBroadbandListInfoQueryService extends BroadbandByNengkaiCommonOneSqlTest
 	
 		@Override
 		List getInParams() {
-			['idCard']
+			['account']
 		}
 	
 		@Override
 		Map getOutIntfMap() {
-			[ 'cls':'gsBroadbandListInfoQueryOutService', 'path': '/openapi/V1/Party/User/queryBroadbandUserList4Online', 'method': 'POST']
+			[ 'cls':'gsBroadbandListInfoQueryOutService', 'path': '/openapi/V1/BizInteraction/Order/queryBroadbandProductsSubscribedByID4Online', 'method': 'POST']
 		}
 	}

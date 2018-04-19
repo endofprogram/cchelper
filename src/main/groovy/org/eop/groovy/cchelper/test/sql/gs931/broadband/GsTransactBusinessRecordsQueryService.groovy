@@ -25,11 +25,11 @@ class GsTransactBusinessRecordsQueryService extends BroadbandByNengkaiCommonOneS
 
 	@Override
 	List getInParams() {
-		['busiCode','startTime','endTime']
+		['account','type','startTime','endTime','regionId','srvCode']
 	}
 
 	@Override
 	Map getOutIntfMap() {
-		[ 'cls':'gsTransactBusinessRecordsQueryOutService', 'path': '/openapi/V1/Party/User/queryBroadbandInformation4Online', 'method': 'POST']
+		[ 'cls':'gsTransactBusinessRecordsQueryOutService', 'path': '/openapi/V1/BizInteraction/Order/queryBroadbandBizInteractionRecords4Online', 'method': 'POST']
 	}
 }

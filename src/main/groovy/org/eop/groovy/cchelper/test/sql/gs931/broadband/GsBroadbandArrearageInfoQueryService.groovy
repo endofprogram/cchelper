@@ -27,7 +27,7 @@ class GsBroadbandArrearageInfoQueryService extends BroadbandByNengkaiCommonOneSq
 
 	@Override
 	List getInParams() {
-		['busiCode']
+		['account']
 	}
 
 	@Override

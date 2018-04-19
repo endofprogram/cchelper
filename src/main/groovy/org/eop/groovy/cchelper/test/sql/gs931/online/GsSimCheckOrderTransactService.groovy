@@ -25,11 +25,11 @@ class GsSimCheckOrderTransactService extends OnlineByNengkaiCommonOneSqlTest{
 	}
 	@Override
 	public List getInParams() {
-		['transactionID','simCardNo','billId'];
+		['reqInfo'];
 	}
 
 	@Override
 	public Map getOutIntfMap() {
-		[ 'cls':'gsSimCheckOrderTransactOutService', 'path': '/openapi/V1/BizInteraction/Order/checkPhoneNumberAndSim4Online', 'method': 'POST']
+		[ 'cls':'gsSimCheckOrderTransactOutService', 'path': '/openapi/V1/Resource/Msisdn/checkMsisdnAndSim4Online', 'method': 'POST']
 	}
 }

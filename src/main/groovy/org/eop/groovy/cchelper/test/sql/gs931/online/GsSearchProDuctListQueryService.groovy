@@ -25,11 +25,11 @@ class GsSearchProDuctListQueryService extends OnlineByNengkaiCommonOneSqlTest{
 	}
 	@Override
 	public List getInParams() {
-		['cityCode','svcNum','queryWords','productCode'];
+		['reqInfo'];
 	}
 
 	@Override
 	public Map getOutIntfMap() {
-		[ 'cls':'gsSearchProDuctListQueryOutService', 'path': '/openapi/V1/Product/Product/queryUserAvailableProducts4Online', 'method': 'POST']
+		[ 'cls':'gsSearchProDuctListQueryOutService', 'path': '/openapi/V1/Product/Products/queryUserAvailableProducts4Online', 'method': 'POST']
 	}
 }

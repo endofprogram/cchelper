@@ -25,11 +25,11 @@ class GsBookSvcnumTransactService extends OnlineByNengkaiCommonOneSqlTest{
 	}
 	@Override
 	public List getInParams() {
-		['transactionID','svcNum','custCertNo','custCertName'];
+		['transactionID','reqInfo'];
 	}
 
 	@Override
 	public Map getOutIntfMap() {
-		[ 'cls':'gsBookSvcnumTransactOutService', 'path': '/openapi/V1/Resource/Msisdn/preholdingPHONE_NUMBER4Online', 'method': 'POST']
+		[ 'cls':'gsBookSvcnumTransactOutService', 'path': '/openapi/V1/Resource/Msisdn/submitPreOccupyingMsisdn4Online', 'method': 'POST']
 	}
 }
