@@ -1,6 +1,6 @@
 package org.eop.groovy.cchelper.test.sql.gs931.intnet15
 
-class bd_queryUserPointInfo extends Inter15ByNengKaiCommonManySqlTest{
+class bd_queryUserPointInfo extends Intnet15ByNengkaiCommonUnionSqlTest{
     @Override
     String getSqlFilePrefix() {
         'int03'
