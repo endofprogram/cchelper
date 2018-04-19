@@ -23,7 +23,7 @@ class GsQueryPayRecordsQueryService extends BroadbandByNengkaiCommonOneSqlTest {
 
     @Override
     List getInParams() {
-        ['busiCode','startTime','endTime']
+        ['srvCode','startTime','endTime']
     }
 
     @Override
