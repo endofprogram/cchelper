@@ -5,21 +5,19 @@ class o16ECOrderStatusSy extends _00Int15CommonOneSqlTest{
     String getSqlFilePrefix() {
         '_016'
     }
-
     @Override
     String getDistinctName() {
-
         '订单状态同步'
     }
 
     @Override
     Map getInIntfMap() {
-        'orderStatusSy'
+        ['path': 'business/gs/orderStateSynchronization', 'method': 'GET']
     }
-
     @Override
     Map getOutIntfMap() {
-        ['path': 'business/gs/orderStateSynchronization', 'method': 'POST']
+        [ 'cls':'gsOrderStateSynchronizationService', 'path': '/gsccwap/orderStatus/obtain.do', 'method': 'POST']
+
     }
 
     @Override
@@ -29,7 +27,6 @@ class o16ECOrderStatusSy extends _00Int15CommonOneSqlTest{
 
     @Override
     String getDepKey() {
-        [ 'cls':'gsOrderStateSynchronizationService', 'path': '/gsccwap/orderStatus/obtain.do', 'method': 'POST']
-
+        'orderStatusSy'
     }
 }
